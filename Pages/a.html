@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Simple books </title>
+
+<style>
+a{
+text-decoration: none;
+color: black;
+}
+.active {
+  background-color: #717171;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #3c3c3c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fcd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+body {
+	font-family: Verdana, sans-serif;'
+    background-color: black;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+#name{ 
+Background-image: url("../Images/1.png");  background-size: cover;
+background-position: center center;	
+margin-top:-50px;
+padding: 50px;
+text-align: center;
+color: black;
+}
+#content{
+Background-image: url("../Images/ap1.jpeg");
+background-size: cover;
+background-position: center center;
+margin-top:-50px;
+padding: 50px;
+text-align: center;
+color: black;}
+
+#things{
+Background-image: url("../Images/social.jpeg");
+padding: 50px;
+text-align: center;
+color: black;
+  background-size: cover;
+  background-position: center center;
+  margin-top:-50px;
+
+}
+#more{
+Background-image: url("../Images/ap2.jpeg");
+padding: 50px;
+text-align: center;
+color: black;
+background-size: cover;
+  background-position: center center;
+  margin-top:-50px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+.right{float:right;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="../index.html">Home</a>
+  <a class="active" href="a.html">About</a>
+  <a href="fbp.html">Books</a>
+  <a href="c.html">Comment</a>
+  <a href="user.php">User History</a>
+  <div class="right">
+  <a href="SU.html">Sign up</a>
+  </div>
+</div>
+<div id="name">
+  <h1>About Us Page</h1>
+  <p>This is simple books. We are an online library which allows you to access information on various books and is developing everday.</p>
+  <p></p>
+</div>
+<div class="about-section" id="content">
+    <h1>Books</h1>
+  <p>We do not have a lot of books in store but as the e-library gets updated and bigger.</p>
+  <p> Click the link below to view books in store</p>
+  <button><a href="fbp.html"> Click here</a></button>
+</div>
+<div class="about-section" id="things">
+<h1>Contact Us</h1>
+  <p>You can also contact us on our social handles</p>
+  <p>IG: <span><a href="#">@simplebooks</a></span></p>
+  <p> OR </p>
+  <p>Twitter: <span><a href="#">@Sbooks</a></p>
+  <p>For users who want to drop comments or give beneficial advice for the website</p>
+  <p> Please kindly click the link below</p>
+  <button><a href="c.html"> Click here</a></button>
+</div>
+<div class="about-section" id="more">
+  <h1>Thank you for using our site</h1>
+  <p>Enjoy your reading and Remember</p>
+  <h2>Reading IS FUN!!</h2>
+</div>
+</body>
+</html> 

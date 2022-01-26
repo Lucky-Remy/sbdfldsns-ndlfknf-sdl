@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Book Gallery </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a{ text-decoration: none;
+}
+button{
+  background-color: #FC7307;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 2;
+}
+
+p{
+text-align: center}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.active {
+  background-color: #717171;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #3c3c3c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fcd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+img {
+
+
+display: block;
+
+
+width: 250px;
+height: 300px;
+
+
+margin-left: auto;
+
+
+margin-right: auto;
+
+
+}
+.buttons {
+  width: auto;
+}
+
+.action_btn {
+  width: auto;
+}.right{float:right;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="a.html">About</a>
+  <a class="active" href="fbp.html">Books</a>
+  <a href="c.html">Comment</a>
+  <a href="user.php">User History</a>
+  <div class="right">
+  <a href="SU.html">Sign up</a>
+  </div>
+</div>
+<p>Classic Books</p>
+<div class="slideshow-container" style="background-color: grey">
+  <div class="mySlides1">
+    <img src="../Images/bk6.jpeg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk6.pdf" download>Download</button>
+    <button><a href="https://thefreeonlinenovel.com/con/to-kill-a-mockingbird_chapter-1">Read online</button>
+    </div>
+    </div>
+    </div>
+  </div>
+    <div class="mySlides1">
+   <img src="../Images/1.jpg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk4.pdf" download>Download</button>
+    <button><a href="https://thefreeonlinenovel.com/con/the-great-gatsby-_chapter-1">Read online</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mySlides1">
+     <img src="../Images/bk4.jpeg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk4.pdf" download>Download </buttton>
+    <button><a href="https://onlinereadfreenovel.com/mario-puzo/page,3,33783-the_godfather.amp"> Read online</buttton>
+  </div>
+</div>
+</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+
+</div>
+<p>Kids</p>
+<div class="slideshow-container" style="background-color: grey">
+  <div class="mySlides2">
+    <img src="../Images/bk9.jpeg"></img>
+<div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk9.pdf" download>Download</button>
+    <button><a href="https://allnovel.net/harry-potter-and-the-goblet-of-fire-harry-potter-4/page-1.html">Read online</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+ 
+  
+  <div class="mySlides2">
+    <img src="../Images/bk8.jpeg"></img>
+        <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="bk8.pdf" download> Download</button>
+    <button><a href="https://allnovel.net/harry-potter-and-the-half-blood-prince-harry-potter-6/page-1.html">Read online</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="mySlides2">
+    <img src="../Images/bk2.jpeg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk2.pdf" download>Download</buttton>
+    <button><a href="https://allnovel.net/harry-potter-and-the-order-of-the-phoenix-harry-potter-5/page-1.html">Read online</buttton>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<p>Romance</p>
+<div class="slideshow-container" style="background-color:grey;">
+  <div class="mySlides3">
+    <img src="../Images/bk7.jpeg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk7.pdf" download>Download </button>
+    <button><a href="">Read online </button>
+    </div>
+    </div>
+    </div>
+  </div>
+ <div class="mySlides3">
+    <img src="../Images/bk3.jpeg">
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk3.pdf" download>Download</buttton>
+    <button><a href="http://readtwilightsagaonline.blogspot.com/2010/07/twilight-chapter-1-first-sight.html?m=1">Read online</buttton>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+ <div class="mySlides3">
+    <img src="../Images/bk5.jpeg"></img>
+    <div class="buttons">
+    <div class="action_btn">
+    <div style="text-align: center">
+    <button><a href="../books/bk5.pdf" download>Download</button>
+    <button><a href="https://www.studynovels.com/Page/Story?bookId=50099">Read online</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+
+<script>
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 

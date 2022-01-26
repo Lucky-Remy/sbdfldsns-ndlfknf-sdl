@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.cmmt {
+  background-color: dodgerblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.cmmt:hover {
+  opacity: 1;
+}
+.active {
+  background-color: #717171;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #3c3c3c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fcd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+height: 100%}
+* {box-sizing: border-box;}
+.btn{
+text-align: center;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+ background-image: url('../Images/1.png');
+  background-size: cover;
+  background-position: center center;	
+  padding: 20px;
+}
+.right{float:right;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="a.html">About</a>
+  <a href="fbp.html">Books</a>
+  <a class="active" href="c.html">Comment</a>
+  <a href="user.php">User History</a>
+  <div class="right">
+  <a href="SU.html">Sign up</a>
+  </div>
+</div>
+<div class="container">
+  <form name="form1" method="POST" action="comment.php">
+<h3 style="text-align:center;">Contact Us</h3>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+<label for="email">Email</label>
+    <input type="text" placeholder="Your Email.." name="email" id="email" required>
+
+    <label for="subject">Share your complaints and comments</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+<div class="btn">
+	<button type="submit" class="cmmt">Sign up</button>
+   </div>
+</div>
+  </form>
+</div>
+
+</body>
+</html>
